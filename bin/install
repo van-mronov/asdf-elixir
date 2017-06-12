@@ -11,6 +11,11 @@ install_elixir() {
     local tmp_download_dir=$TMPDIR
   fi
 
+  echo "install_type:"
+  echo $ASDF_INSTALL_TYPE
+
+  echo $version
+
   # path to the tar file
   local source_path=$(get_download_file_path $install_type $version $tmp_download_dir)
   echo $source_path
